@@ -47,19 +47,19 @@ Donde, la IP 127.0.0.1 debe ser reemplazada por la IP que se desea escanear.
 -p [puerto, puerto, puerto]:  Escanea un conjunto de puertos especificos separados por coma.
 -p [puerto-puerto]:  Escanea un intervalo de puertos.
 
-#Especificación dobjeto de escaneo
+# Especificación dobjeto de escaneo
 -t  [IP] :  Direccion IP del objetivo a escanear.
 
-#Ejemplos:
-escaneo por defecto:
+# Ejemplos:
+Escaneo por defecto:
 ```
 python SimpleScan.py -t 127.0.0.1
 ```
-escaneo a un puerto específico.
+Escaneo a un puerto específico.
 ```
 python SimpleScan.py -sS -p 80 -t 127.0.0.1
 ```
-escaneo a un intervalo de puertos.
+Escaneo a un intervalo de puertos.
 ```
 python SimpleScan.py -sS -p 0-1000 -t 127.0.0.1
 ```
