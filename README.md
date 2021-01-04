@@ -1,5 +1,5 @@
 # SimpleScam
-Simplescan herramienta para realizar escaneo de puertos tcp. La herramienta realiza escneos de tipo Stealth scan, Connect scan y Acknowledgement scan (ACK scan).
+SimpleScan herramienta para realizar escaneo de puertos tcp. La herramienta realiza escneos de tipo Stealth scan, Connect scan y Acknowledgement scan (ACK scan).
 
 # Requisitos
 - Python 3.7.x o superior.
@@ -28,8 +28,8 @@ pip install -r requirements.txt
 ```
 python SimpleScan.py -t 127.0.0.1
 ```
-# Opciones de Simplescan
-Simplescan realiza por defecto un escaneo de tipo Stealth scan a los primeros 1.000 puertos.
+# Opciones de SimpleScan
+SimpleScan realiza por defecto un escaneo de tipo Stealth scan a los primeros 1.000 puertos.
 
 Para realizar un escaneo por defecto se debe ejecutar el siguiente comando:
 ```
@@ -38,16 +38,16 @@ python SimpleScan.py -t 127.0.0.1
 Donde, la IP 127.0.0.1 debe ser reemplazada por la IP que se desea escanear.
 
 # Otras opciones de escaneo
--sC : Realiza un escaner de tipo Connect scan.
--sA : Realiza un escaneo de tipo ACK scan.
+-sC : Realiza un escaner de tipo Connect scan.  
+-sA : Realiza un escaneo de tipo ACK scan.  
 -sS : Realiza un escaneo de tipo Stealth scan.
 
 # Especificación de puertos:
--p [puerto]:  Escanea un puerto específico.
--p [puerto, puerto, puerto]:  Escanea un conjunto de puertos especificos separados por coma.
+-p [puerto]:  Escanea un puerto específico.  
+-p [puerto, puerto, puerto]:  Escanea un conjunto de puertos especificos separados por coma.  
 -p [puerto-puerto]:  Escanea un intervalo de puertos.
 
-# Especificación dobjeto de escaneo
+# Especificación objeto a escanear
 -t  [IP] :  Direccion IP del objetivo a escanear.
 
 # Ejemplos:
@@ -61,5 +61,9 @@ python SimpleScan.py -sS -p 80 -t 127.0.0.1
 ```
 Escaneo a un intervalo de puertos.
 ```
-python SimpleScan.py -sS -p 0-1000 -t 127.0.0.1
+python SimpleScan.py -sS -p 0-500 -t 127.0.0.1
+```
+Escaneo a puertos especificos e intervalos de puertos.
+```
+python SimpleScan.py -sS -p 21,22,53,445,455-500 -t 127.0.0.1
 ```
