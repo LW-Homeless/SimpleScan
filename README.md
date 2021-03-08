@@ -67,3 +67,5 @@ Escaneo a puertos especificos e intervalos de puertos.
 ```
 python SimpleScan.py -sS -p 21,22,53,445,455-500 -t 127.0.0.1
 ```
+# Video demostración 
+![alt text](https://github.com/LW-Homeless/Whois/blob/master/simplescan.gif)
