@@ -1,4 +1,4 @@
-# SimpleScam
+# SimpleScan
 SimpleScan herramienta para realizar escaneo de puertos tcp. La herramienta realiza escneos de tipo Stealth scan, Connect scan y Acknowledgement scan (ACK scan).
 
 # Requisitos
